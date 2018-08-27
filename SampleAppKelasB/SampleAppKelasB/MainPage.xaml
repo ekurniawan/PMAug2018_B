@@ -2,15 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SampleAppKelasB"
-             x:Class="SampleAppKelasB.MainPage">
+             x:Class="SampleAppKelasB.MainPage" Title="Main Page">
 
     <StackLayout Orientation="Vertical">
         <!-- Place new controls here -->
     	<Label Text="Hello Xamarin Forms !!" TextColor="Red" />
         <Label Text="Belajar XAML Layout" TextColor="Green" />
         <StackLayout Orientation="Horizontal">
-            <Button Text="Submit" FontSize="Small" />
-            <Button Text="Add" FontSize="Small" />
+            <Button x:Name="btnAdd" Text="Add" WidthRequest="60" FontSize="Small" />
+            <Button x:Name="btnEdit" Text="Edit" WidthRequest="60" FontSize="Small" />
         </StackLayout>
     </StackLayout>
 
