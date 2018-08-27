@@ -6,8 +6,8 @@
 
     <StackLayout Orientation="Vertical">
         <!-- Place new controls here -->
-    	<Label Text="Hello Xamarin Forms !!" />
-        <Label Text="Belajar XAML Layout" />
+    	<Label Text="Hello Xamarin Forms !!" TextColor="Red" />
+        <Label Text="Belajar XAML Layout" TextColor="Green" />
         <StackLayout Orientation="Horizontal">
             <Button Text="Submit" FontSize="Small" />
             <Button Text="Add" FontSize="Small" />
