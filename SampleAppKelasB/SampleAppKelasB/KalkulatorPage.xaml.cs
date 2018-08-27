@@ -9,12 +9,18 @@ using Xamarin.Forms.Xaml;
 
 namespace SampleAppKelasB
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class KalkulatorPage : ContentPage
-	{
-		public KalkulatorPage ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class KalkulatorPage : ContentPage
+    {
+        public KalkulatorPage()
+        {
+            InitializeComponent();
+            btnSubmit.Clicked += BtnSubmit_Clicked;
+        }
+
+        private void BtnSubmit_Clicked(object sender, EventArgs e)
+        {
+            
+        }
+    }
 }

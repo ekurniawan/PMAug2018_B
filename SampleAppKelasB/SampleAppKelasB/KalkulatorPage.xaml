@@ -4,9 +4,17 @@
              x:Class="SampleAppKelasB.KalkulatorPage" Title="Kalkulator Page">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Masukan Bilangan 1 :" />
+            <Entry x:Name="entryBil1" Keyboard="Numeric" />
+            <Label Text="Masukan Bilangan 2 :" />
+            <Entry x:Name="entryBil2" Keyboard="Numeric" />
+            <Label Text="Hasil :" />
+            <Entry x:Name="entryHasil" IsEnabled="False" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnSubmit" WidthRequest="80" FontSize="Micro" 
+                        Text="Submit" />
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
