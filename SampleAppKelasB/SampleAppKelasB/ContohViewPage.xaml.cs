@@ -26,7 +26,7 @@ namespace SampleAppKelasB
 
         private void BtnGetValue_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Keterangan", $"Usia Anda :{sliderUsia.Value}", "OK");
+            DisplayAlert("Keterangan", $"Usia Anda :{sliderUsia.Value}, Setuju? {switchAgree.IsToggled}", "OK");
         }
     }
 }
