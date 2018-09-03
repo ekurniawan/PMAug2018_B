@@ -17,6 +17,18 @@ namespace SampleAppKelasB
             InitializeComponent();
             btnGetValue.Clicked += BtnGetValue_Clicked;
             stepperNilai.ValueChanged += StepperNilai_ValueChanged;
+            btnRunning.Clicked += BtnRunning_Clicked;
+            btnStop.Clicked += BtnStop_Clicked;
+        }
+
+        private void BtnStop_Clicked(object sender, EventArgs e)
+        {
+            actLoading.IsRunning = false;
+        }
+
+        private void BtnRunning_Clicked(object sender, EventArgs e)
+        {
+            actLoading.IsRunning = true;
         }
 
         private void StepperNilai_ValueChanged(object sender, ValueChangedEventArgs e)

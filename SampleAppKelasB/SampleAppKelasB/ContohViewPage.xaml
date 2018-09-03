@@ -11,11 +11,16 @@
                 <Entry x:Name="entryNilai" Placeholder="masukan nilai" />
                 <Stepper x:Name="stepperNilai" Minimum="0" Maximum="100" Increment="1" />
                 <Label Text="Apakah anda setuju dengan term of condition ini?" />
+                <Switch x:Name="switchAgree" IsToggled="False" />
                 <Label Text="Tanggal :"/>
                 <DatePicker x:Name="dpTanggal" Format="D" />
-                <Switch x:Name="switchAgree" IsToggled="False" />
+                <Label Text="Waktu :" />
+                <TimePicker x:Name="tpWaktu" />
+                <ActivityIndicator HorizontalOptions="CenterAndExpand" x:Name="actLoading" IsRunning="False" />
                 <StackLayout Orientation="Horizontal">
                     <Button x:Name="btnGetValue" Text="Get Value" />
+                    <Button x:Name="btnRunning" Text="Run" />
+                    <Button x:Name="btnStop" Text="Stop" />
                 </StackLayout>
             </StackLayout>
         </ScrollView>
