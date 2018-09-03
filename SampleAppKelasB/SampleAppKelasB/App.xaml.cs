@@ -11,7 +11,7 @@ namespace SampleAppKelasB
         {
             InitializeComponent();
 
-            MainPage = new SampleAppKelasB.KalkulatorPage();
+            MainPage = new ContohViewPage();
         }
 
         protected override void OnStart()
