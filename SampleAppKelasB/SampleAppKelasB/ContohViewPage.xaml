@@ -7,6 +7,8 @@
             <Image Source="xamarinmonkey.png" WidthRequest="120" />
             <Label Text="Usia :" />
             <Slider x:Name="sliderUsia" Minimum="0" Maximum="100" />
+            <Entry x:Name="entryNilai" Placeholder="masukan nilai" />
+            <Stepper x:Name="stepperNilai" Minimum="0" Maximum="100" Increment="1" />
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="btnGetValue" Text="Get Value" />
             </StackLayout>
