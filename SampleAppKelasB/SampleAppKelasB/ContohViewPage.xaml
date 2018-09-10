@@ -18,6 +18,10 @@
                 <TimePicker x:Name="tpWaktu" />
                 <ActivityIndicator HorizontalOptions="CenterAndExpand" x:Name="actLoading" IsRunning="False" />
                 <ProgressBar HorizontalOptions="CenterAndExpand" x:Name="pbSample" />
+                <Picker x:Name="pickerNegara" Title="Pilih Negara" />
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="btnGetNegara" Text="Get Negara" />
+                </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Button x:Name="btnGetValue" Text="Get Value" />
                     <Button x:Name="btnRunning" Text="Run" />

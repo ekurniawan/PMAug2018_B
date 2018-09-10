@@ -19,6 +19,16 @@ namespace SampleAppKelasB
             stepperNilai.ValueChanged += StepperNilai_ValueChanged;
             btnRunning.Clicked += BtnRunning_Clicked;
             btnStop.Clicked += BtnStop_Clicked;
+            btnGetNegara.Clicked += BtnGetNegara_Clicked;
+
+            var listNegara = new List<string> { "Indonesia", "Singapore", "Malaysia", "Thailand", "Japan" };
+            pickerNegara.ItemsSource = listNegara;
+        }
+
+        private void BtnGetNegara_Clicked(object sender, EventArgs e)
+        {
+            var data = pickerNegara.Items[pickerNegara.SelectedIndex];
+            DisplayAlert("Keterangan", $"Anda memilih negara: {data}", "OK");
         }
 
         private void BtnStop_Clicked(object sender, EventArgs e)
