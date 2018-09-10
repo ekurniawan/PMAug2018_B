@@ -23,6 +23,27 @@ namespace SampleAppKelasB
 
             var listNegara = new List<string> { "Indonesia", "Singapore", "Malaysia", "Thailand", "Japan" };
             pickerNegara.ItemsSource = listNegara;
+
+            pickerNegara.SelectedIndexChanged += PickerNegara_SelectedIndexChanged;
+        }
+
+        private void PickerNegara_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var listKota = new List<string>();
+            var picker = (Picker)sender;
+            var data = pickerNegara.Items[pickerNegara.SelectedIndex];
+            if (data == "Indonesia")
+            {
+                listKota.Clear();
+                listKota.Add("Jakarta");
+                listKota.Add("Jogjakarta");
+            }else if (data == "Malaysia")
+            {
+                listKota.Clear();
+                listKota.Add("Kuala Lumpur");
+                listKota.Add("Penang");
+            }
+            pickerKota.ItemsSource = listKota;
         }
 
         private void BtnGetNegara_Clicked(object sender, EventArgs e)

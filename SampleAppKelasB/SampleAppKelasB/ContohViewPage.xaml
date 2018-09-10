@@ -19,6 +19,7 @@
                 <ActivityIndicator HorizontalOptions="CenterAndExpand" x:Name="actLoading" IsRunning="False" />
                 <ProgressBar HorizontalOptions="CenterAndExpand" x:Name="pbSample" />
                 <Picker x:Name="pickerNegara" Title="Pilih Negara" />
+                <Picker x:Name="pickerKota" Title="Pilih Kota" />
                 <StackLayout Orientation="Horizontal">
                     <Button x:Name="btnGetNegara" Text="Get Negara" />
                 </StackLayout>
