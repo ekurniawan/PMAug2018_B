@@ -11,7 +11,7 @@ namespace SampleAppKelasB
         {
             InitializeComponent();
 
-            MainPage = new ContohViewPage();
+            MainPage = new LayoutGridPage();
         }
 
         protected override void OnStart()
