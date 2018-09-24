@@ -12,9 +12,12 @@ namespace SampleAppKelasB.ViewModels
         {
             listBerita = new List<Berita>()
             {
-                new Berita{Judul="Xamarin Forms",Deskripsi="Belajar Xamarin Forms dan Visual Studio"},
-                new Berita{Judul="CSharp Programming",Deskripsi="Belajar Pemrograman CSharp"},
-                new Berita{Judul="Xamarin Android",Deskripsi="Pengembangan Aplikasi Mobile dengan Xamarin for Android"}
+                new Berita{Judul="Xamarin Forms",
+                    Deskripsi ="Belajar Xamarin Forms dan Visual Studio"},
+                new Berita{Judul="CSharp Programming",
+                    Deskripsi ="Belajar Pemrograman CSharp"},
+                new Berita{Judul="Xamarin Android",
+                    Deskripsi ="Pengembangan Aplikasi Mobile dengan Xamarin for Android"}
             };
         }
 

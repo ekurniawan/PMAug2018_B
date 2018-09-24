@@ -4,7 +4,7 @@
              x:Class="SampleAppKelasB.TextListPage" Title="Text List Page">
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding ListBerita}">
+            <ListView ItemsSource="{Binding ListBerita}" ItemTapped="ListView_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Judul}" Detail="{Binding Deskripsi}"

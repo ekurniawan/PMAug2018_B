@@ -11,7 +11,7 @@ namespace SampleAppKelasB
         {
             InitializeComponent();
 
-            MainPage = new SampleBindingPage();
+            MainPage = new TextListPage();
         }
 
         protected override void OnStart()
