@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleAppKelasB.HomePage" Title="Home Page">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnSimpleList" Text="Simple List View" Clicked="btnSimpleList_Clicked" />
+            <Button x:Name="btnTextListView" Text="Text List View" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
