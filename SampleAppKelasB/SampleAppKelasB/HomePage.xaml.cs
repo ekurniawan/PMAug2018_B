@@ -21,5 +21,10 @@ namespace SampleAppKelasB
         {
             Navigation.PushAsync(new SimpleListPage());
         }
+
+        private void btnTextListView_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new TextListPage());
+        }
     }
 }

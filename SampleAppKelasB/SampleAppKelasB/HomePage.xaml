@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Button x:Name="btnSimpleList" Text="Simple List View" Clicked="btnSimpleList_Clicked" />
-            <Button x:Name="btnTextListView" Text="Text List View" />
+            <Button x:Name="btnTextListView" Text="Text List View" Clicked="btnTextListView_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
