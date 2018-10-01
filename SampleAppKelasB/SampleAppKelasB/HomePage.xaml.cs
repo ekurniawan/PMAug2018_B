@@ -18,6 +18,7 @@ namespace SampleAppKelasB
             menuSimpleList.Clicked += MenuNavigation_Clicked;
             menuTextList.Clicked += MenuNavigation_Clicked;
             menuKalkulator.Clicked += MenuNavigation_Clicked;
+            menuProductList.Clicked += MenuNavigation_Clicked;
         }
 
         private void MenuNavigation_Clicked(object sender, EventArgs e)
@@ -30,6 +31,10 @@ namespace SampleAppKelasB
             else if(menu.Text== "Text List")
             {
                 Navigation.PushAsync(new TextListPage());
+            }
+            else if(menu.Text== "Product List")
+            {
+                Navigation.PushAsync(new ProductListPage());
             }
             else
             {
