@@ -15,6 +15,26 @@ namespace SampleAppKelasB
         public HomePage()
         {
             InitializeComponent();
+            menuSimpleList.Clicked += MenuNavigation_Clicked;
+            menuTextList.Clicked += MenuNavigation_Clicked;
+            menuKalkulator.Clicked += MenuNavigation_Clicked;
+        }
+
+        private void MenuNavigation_Clicked(object sender, EventArgs e)
+        {
+            var menu = sender as ToolbarItem;
+            if(menu.Text== "Simple List")
+            {
+                Navigation.PushAsync(new SimpleListPage());
+            }
+            else if(menu.Text== "Text List")
+            {
+                Navigation.PushAsync(new TextListPage());
+            }
+            else
+            {
+                Navigation.PushAsync(new KalkulatorPage());
+            }
         }
 
         private void btnSimpleList_Clicked(object sender, EventArgs e)

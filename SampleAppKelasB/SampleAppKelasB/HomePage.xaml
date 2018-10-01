@@ -2,6 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SampleAppKelasB.HomePage" Title="Home Page">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="menuSimpleList" Text="Simple List" Order="Secondary" />
+        <ToolbarItem x:Name="menuTextList" Text="Text List" Order="Secondary" />
+        <ToolbarItem x:Name="menuKalkulator" Text="Kalkulator" Order="Primary" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <Button x:Name="btnSimpleList" Text="Simple List View" Clicked="btnSimpleList_Clicked" />
