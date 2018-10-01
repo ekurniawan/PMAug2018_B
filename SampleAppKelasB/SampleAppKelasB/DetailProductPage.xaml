@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleAppKelasB.DetailProductPage" Title="Detail Product">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal" Padding="5">
+            <Image Source="{Binding Gambar}" WidthRequest="200" VerticalOptions="Start" HorizontalOptions="Start" />
+            <StackLayout Orientation="Vertical">
+                <Label Text="{Binding ProductName}" FontSize="Large" FontAttributes="Bold"
+                       TextColor="Red" />
+                <Label Text="{Binding Harga,StringFormat='Harga: Rp.{0:N0}'}" FontSize="Medium" FontAttributes="Bold" />
+                <Label Text="{Binding Detail}" FontSize="Medium" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
