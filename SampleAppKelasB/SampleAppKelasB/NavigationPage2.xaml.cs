@@ -15,6 +15,13 @@ namespace SampleAppKelasB
         public NavigationPage2()
         {
             InitializeComponent();
+            btnGetGlobal.Clicked += BtnGetGlobal_Clicked;
+        }
+
+        private void BtnGetGlobal_Clicked(object sender, EventArgs e)
+        {
+            string keterangan = $"Nama: {Global.Instance.Nama}, Email: {Global.Instance.Email}";
+            DisplayAlert("Keterangan", keterangan, "OK");
         }
 
         public NavigationPage2(string nama,string email)
