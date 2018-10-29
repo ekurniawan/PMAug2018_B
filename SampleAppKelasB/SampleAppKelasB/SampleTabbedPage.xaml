@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:myPage="clr-namespace:SampleAppKelasB"
+             x:Class="SampleAppKelasB.SampleTabbedPage">
+  <!--Pages can be added as references or inline-->
+    <myPage:KalkulatorPage Title="Kalkulator" />
+    <NavigationPage Title="Product">
+        <x:Arguments>
+            <myPage:ProductListPage Title="Product" />
+        </x:Arguments>
+    </NavigationPage>
+    <ContentPage Title="Tab 3">
+        <Label Text="Ini konten pada Tab 3" FontSize="Medium" TextColor="Blue" />
+    </ContentPage>
+</TabbedPage>
