@@ -19,7 +19,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal" BackgroundColor="Blue" 
+                            <StackLayout Orientation="Horizontal" 
                                      Padding="5,5,5,5">
                                 <Label Text="{Binding EmpName}" FontSize="Medium" />
                                 <Label Text="{Binding Designation}" FontSize="Medium" />
