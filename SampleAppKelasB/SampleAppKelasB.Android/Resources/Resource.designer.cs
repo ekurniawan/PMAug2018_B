@@ -26,6 +26,8 @@ namespace SampleAppKelasB.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Plugin.NetStandardStorage.Resource.String.ApplicationName = global::SampleAppKelasB.Droid.Resource.String.ApplicationName;
+			global::Plugin.NetStandardStorage.Resource.String.Hello = global::SampleAppKelasB.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::SampleAppKelasB.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -3976,6 +3978,12 @@ namespace SampleAppKelasB.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f0a003d
+			public const int ApplicationName = 2131361853;
+			
+			// aapt resource value: 0x7f0a003c
+			public const int Hello = 2131361852;
 			
 			// aapt resource value: 0x7f0a0015
 			public const int abc_action_bar_home_description = 2131361813;

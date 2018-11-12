@@ -10,7 +10,7 @@ namespace SampleAppKelasB
         public App()
         {
             InitializeComponent();
-            MainPage = new MyPage();
+            MainPage = new NavigationPage(new ManageEmployee());
         }
 
         protected override void OnStart()
