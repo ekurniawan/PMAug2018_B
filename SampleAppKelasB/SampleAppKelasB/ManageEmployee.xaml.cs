@@ -18,12 +18,16 @@ namespace SampleAppKelasB
         {
             InitializeComponent();
             db = new DataAccess();
+        }
+
+        protected override void OnAppearing()
+        {
             lstEmployee.ItemsSource = db.GetAllEmployees();
         }
 
-        private void btnAdd_Clicked(object sender, EventArgs e)
+        private async void btnAdd_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new AddEmployee());
         }
     }
 }

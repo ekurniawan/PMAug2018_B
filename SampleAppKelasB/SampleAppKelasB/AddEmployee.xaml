@@ -4,7 +4,13 @@
              x:Class="SampleAppKelasB.AddEmployee" Title="Add Employee">
     <ContentPage.Content>
         <StackLayout>
-            <Entry x:Name="txtEmpName" Placeholder="insert Emp Name" />
+            <Entry x:Name="txtEmpName" Placeholder="insert EmpName" />
+            <Entry x:Name="txtDesignation" Placeholder="insert Designation" />
+            <Entry x:Name="txtDepartment" Placeholder="insert department" />
+            <Entry x:Name="txtQualification" Placeholder="insert qualification" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnSave" Text="Save" Clicked="btnSave_Clicked" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
