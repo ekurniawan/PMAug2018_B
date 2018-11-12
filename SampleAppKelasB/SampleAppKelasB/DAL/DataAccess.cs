@@ -55,5 +55,17 @@ namespace SampleAppKelasB.DAL
                 throw new Exception($"Error: {ex.Message}");
             }
         }
+
+        public int EditEmployee(Employee employee)
+        {
+            try
+            {
+                return db.Update(employee);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error: {ex.Message}");
+            }
+        }
     }
 }
