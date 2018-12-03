@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleAppKelasB.TodoListPage" Title="Todo List Page">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="menuTambah" Text="Tambah" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lstTodoItems">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" />
+                                <Image Source="check.png" WidthRequest="20" IsVisible="{Binding Done}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
