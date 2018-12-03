@@ -35,5 +35,23 @@ namespace SampleAppKelasB.Services
             }
             return items;
         }
+
+        public async Task InsertData(TodoItem item)
+        {
+            var uri = new Uri(Helpers.RestUrl);
+            try
+            {
+                var jsonData = JsonConvert.SerializeObject(item);
+                var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                var response = await _client.PostAsync(uri, content);
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception($"Data gagal ditambahkan");
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Kesalahan:{ex.Message}");
+            }
+        }
     }
 }
