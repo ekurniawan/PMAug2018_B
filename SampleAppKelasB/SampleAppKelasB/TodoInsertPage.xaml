@@ -8,8 +8,8 @@
             <Entry x:Name="txtNotes" Placeholder="insert notes" />
             <Switch x:Name="switchDone" IsToggled="False" />
             <StackLayout Orientation="Horizontal">
-                <Button x:Name="btnSave" Text="Save" />
-                <Button x:Name="btnCancel" Text="Cancel" />
+                <Button x:Name="btnSave" Text="Save" Clicked="btnSave_Clicked" />
+                <Button x:Name="btnCancel" Text="Cancel" Clicked="btnCancel_Clicked" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

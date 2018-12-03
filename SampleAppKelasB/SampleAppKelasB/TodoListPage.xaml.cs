@@ -25,5 +25,10 @@ namespace SampleAppKelasB
             base.OnAppearing();
             lstTodoItems.ItemsSource = await _services.GetAllData();
         }
+
+        private async void menuTambah_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TodoInsertPage());
+        }
     }
 }
