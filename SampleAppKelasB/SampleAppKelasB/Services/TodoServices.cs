@@ -53,5 +53,38 @@ namespace SampleAppKelasB.Services
                 throw new Exception($"Kesalahan:{ex.Message}");
             }
         }
+
+        public async Task UpdateData(TodoItem item)
+        {
+            var uri = new Uri($"{Helpers.RestUrl}/{item.ID}");
+            try
+            {
+                var jsonData = JsonConvert.SerializeObject(item);
+                var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                var response = await _client.PutAsync(uri, content);
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception($"Data gagal diupdate");
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Kesalahan:{ex.Message}");
+            }
+        }
+
+        public async Task DeleteData(string id)
+        {
+            var uri = new Uri($"{Helpers.RestUrl}/{id}");
+            try
+            {
+                var response = await _client.DeleteAsync(uri);
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception("Delete data gagal !");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Kesalahan: {ex.Message}");
+            }
+        }
     }
 }
