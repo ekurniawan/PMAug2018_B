@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleAppKelasB.TodoInsertPage" Title="Insert Page">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="txtName" Placeholder="insert name" />
+            <Entry x:Name="txtNotes" Placeholder="insert notes" />
+            <Switch x:Name="switchDone" IsToggled="False" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnSave" Text="Save" />
+                <Button x:Name="btnCancel" Text="Cancel" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
